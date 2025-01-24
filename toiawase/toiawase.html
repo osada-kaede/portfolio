@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>フォーム</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <img src="../img/logo.png" alt="logo">
+    </header>
+
+    <main>
+      <form name="contact" method="POST" action="../toiawase/complete.html" data-netlify="true">
+        <label id="user-name" class="form-item">
+          <p class="form-heading">お名前<span class="require"></span></p>
+          <input type="text" name="name" placeholder="お名前をフルネームでご入力ください" required>
+        </label>
+
+        <label id="user-email" class="form-item">
+          <p class="form-heading">メールアドレス<span class="require"></span></p>
+          <input type="email" name="email" placeholder="メールアドレスをご入力ください" required>
+        </label>
+
+        <label id="contact-content" class="form-item">
+          <p class="form-heading">お問い合わせ内容<span class="require"></span></p>
+          <textarea name="message" placeholder="お問い合わせ内容をご入力ください（400字以内）"></textarea>
+        </label>
+
+        <div class="btn-area">
+          <button id="btn_confirm" class="btn">確認する</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <small class="copyright">@2024 tamanisikatodokanai</small>
+    </footer>
+  </body>
+</html>
